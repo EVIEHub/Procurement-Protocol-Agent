@@ -2,6 +2,8 @@
 
 [Diagram and check results](report.html) · [Repair record](REPAIRS.md) · [Final specification](specs/v3.qnt)
 
+Creators: Brian Qian, Fengxiang He
+
 This prototype is intended for demonstration and quick validation: GPT in Codex generated and repaired the specifications over three fixed repair rounds, while Quint/TLC checked the properties and produced counterexamples. As more rules are added, an open-source model could generate and repair specifications in an automated loop, with Quint/TLC continuing to verify each round.
 
 ## Model and assumptions
