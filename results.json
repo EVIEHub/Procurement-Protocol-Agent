@@ -1,0 +1,222 @@
+[
+  {
+    "version": "generated",
+    "property": "noPaymentWithoutConfirmation",
+    "status": "PASS",
+    "exit_code": 0,
+    "distinct_states": 11,
+    "log": "logs/generated-noPaymentWithoutConfirmation.log",
+    "spec_sha256": "4fa4e10a2ae2c9379da7551310c1d4fe426d7a3cc7660a710395101318104c27",
+    "checks_sha256": "19a1d2f07e6c1f1437633efb19fc4158d14ab72e1c5b72e792cd1511877e7649"
+  },
+  {
+    "version": "generated",
+    "property": "noDoublePayment",
+    "status": "PASS",
+    "exit_code": 0,
+    "distinct_states": 11,
+    "log": "logs/generated-noDoublePayment.log",
+    "spec_sha256": "4fa4e10a2ae2c9379da7551310c1d4fe426d7a3cc7660a710395101318104c27",
+    "checks_sha256": "19a1d2f07e6c1f1437633efb19fc4158d14ab72e1c5b72e792cd1511877e7649"
+  },
+  {
+    "version": "generated",
+    "property": "moneyConserved",
+    "status": "PASS",
+    "exit_code": 0,
+    "distinct_states": 11,
+    "log": "logs/generated-moneyConserved.log",
+    "spec_sha256": "4fa4e10a2ae2c9379da7551310c1d4fe426d7a3cc7660a710395101318104c27",
+    "checks_sha256": "19a1d2f07e6c1f1437633efb19fc4158d14ab72e1c5b72e792cd1511877e7649"
+  },
+  {
+    "version": "generated",
+    "property": "noLockedFunds",
+    "status": "PASS",
+    "exit_code": 0,
+    "distinct_states": 11,
+    "log": "logs/generated-noLockedFunds.log",
+    "spec_sha256": "4fa4e10a2ae2c9379da7551310c1d4fe426d7a3cc7660a710395101318104c27",
+    "checks_sha256": "19a1d2f07e6c1f1437633efb19fc4158d14ab72e1c5b72e792cd1511877e7649"
+  },
+  {
+    "version": "v0",
+    "property": "noPaymentWithoutConfirmation",
+    "status": "FAIL",
+    "exit_code": 1,
+    "distinct_states": 7,
+    "log": "logs/v0-noPaymentWithoutConfirmation.log",
+    "spec_sha256": "4c1f4b4f72bb162dde0cb3d12169863ef70672678bd1841fd697cde2954605aa",
+    "checks_sha256": "19a1d2f07e6c1f1437633efb19fc4158d14ab72e1c5b72e792cd1511877e7649"
+  },
+  {
+    "version": "v0",
+    "property": "noDoublePayment",
+    "status": "PASS",
+    "exit_code": 0,
+    "distinct_states": 11,
+    "log": "logs/v0-noDoublePayment.log",
+    "spec_sha256": "4c1f4b4f72bb162dde0cb3d12169863ef70672678bd1841fd697cde2954605aa",
+    "checks_sha256": "19a1d2f07e6c1f1437633efb19fc4158d14ab72e1c5b72e792cd1511877e7649"
+  },
+  {
+    "version": "v0",
+    "property": "moneyConserved",
+    "status": "FAIL",
+    "exit_code": 1,
+    "distinct_states": 7,
+    "log": "logs/v0-moneyConserved.log",
+    "spec_sha256": "4c1f4b4f72bb162dde0cb3d12169863ef70672678bd1841fd697cde2954605aa",
+    "checks_sha256": "19a1d2f07e6c1f1437633efb19fc4158d14ab72e1c5b72e792cd1511877e7649"
+  },
+  {
+    "version": "v0",
+    "property": "noLockedFunds",
+    "status": "FAIL",
+    "exit_code": 1,
+    "distinct_states": 11,
+    "log": "logs/v0-noLockedFunds.log",
+    "spec_sha256": "4c1f4b4f72bb162dde0cb3d12169863ef70672678bd1841fd697cde2954605aa",
+    "checks_sha256": "19a1d2f07e6c1f1437633efb19fc4158d14ab72e1c5b72e792cd1511877e7649"
+  },
+  {
+    "version": "v1",
+    "property": "noPaymentWithoutConfirmation",
+    "status": "PASS",
+    "exit_code": 0,
+    "distinct_states": 9,
+    "log": "logs/v1-noPaymentWithoutConfirmation.log",
+    "spec_sha256": "24547c6596989c42d586899cc4f7c3a60f53ed371143cc3cf00abf757d805b88",
+    "checks_sha256": "19a1d2f07e6c1f1437633efb19fc4158d14ab72e1c5b72e792cd1511877e7649"
+  },
+  {
+    "version": "v1",
+    "property": "noDoublePayment",
+    "status": "PASS",
+    "exit_code": 0,
+    "distinct_states": 9,
+    "log": "logs/v1-noDoublePayment.log",
+    "spec_sha256": "24547c6596989c42d586899cc4f7c3a60f53ed371143cc3cf00abf757d805b88",
+    "checks_sha256": "19a1d2f07e6c1f1437633efb19fc4158d14ab72e1c5b72e792cd1511877e7649"
+  },
+  {
+    "version": "v1",
+    "property": "moneyConserved",
+    "status": "FAIL",
+    "exit_code": 1,
+    "distinct_states": 8,
+    "log": "logs/v1-moneyConserved.log",
+    "spec_sha256": "24547c6596989c42d586899cc4f7c3a60f53ed371143cc3cf00abf757d805b88",
+    "checks_sha256": "19a1d2f07e6c1f1437633efb19fc4158d14ab72e1c5b72e792cd1511877e7649"
+  },
+  {
+    "version": "v1",
+    "property": "noLockedFunds",
+    "status": "FAIL",
+    "exit_code": 1,
+    "distinct_states": 9,
+    "log": "logs/v1-noLockedFunds.log",
+    "spec_sha256": "24547c6596989c42d586899cc4f7c3a60f53ed371143cc3cf00abf757d805b88",
+    "checks_sha256": "19a1d2f07e6c1f1437633efb19fc4158d14ab72e1c5b72e792cd1511877e7649"
+  },
+  {
+    "version": "v2",
+    "property": "noPaymentWithoutConfirmation",
+    "status": "PASS",
+    "exit_code": 0,
+    "distinct_states": 9,
+    "log": "logs/v2-noPaymentWithoutConfirmation.log",
+    "spec_sha256": "cab18a70863fd1435f69ca68e426ff37ea53bde8a2bc78e7cddd0941954cb44f",
+    "checks_sha256": "19a1d2f07e6c1f1437633efb19fc4158d14ab72e1c5b72e792cd1511877e7649"
+  },
+  {
+    "version": "v2",
+    "property": "noDoublePayment",
+    "status": "PASS",
+    "exit_code": 0,
+    "distinct_states": 9,
+    "log": "logs/v2-noDoublePayment.log",
+    "spec_sha256": "cab18a70863fd1435f69ca68e426ff37ea53bde8a2bc78e7cddd0941954cb44f",
+    "checks_sha256": "19a1d2f07e6c1f1437633efb19fc4158d14ab72e1c5b72e792cd1511877e7649"
+  },
+  {
+    "version": "v2",
+    "property": "moneyConserved",
+    "status": "PASS",
+    "exit_code": 0,
+    "distinct_states": 9,
+    "log": "logs/v2-moneyConserved.log",
+    "spec_sha256": "cab18a70863fd1435f69ca68e426ff37ea53bde8a2bc78e7cddd0941954cb44f",
+    "checks_sha256": "19a1d2f07e6c1f1437633efb19fc4158d14ab72e1c5b72e792cd1511877e7649"
+  },
+  {
+    "version": "v2",
+    "property": "noLockedFunds",
+    "status": "FAIL",
+    "exit_code": 1,
+    "distinct_states": 9,
+    "log": "logs/v2-noLockedFunds.log",
+    "spec_sha256": "cab18a70863fd1435f69ca68e426ff37ea53bde8a2bc78e7cddd0941954cb44f",
+    "checks_sha256": "19a1d2f07e6c1f1437633efb19fc4158d14ab72e1c5b72e792cd1511877e7649"
+  },
+  {
+    "version": "v3",
+    "property": "noPaymentWithoutConfirmation",
+    "status": "PASS",
+    "exit_code": 0,
+    "distinct_states": 11,
+    "log": "logs/v3-noPaymentWithoutConfirmation.log",
+    "spec_sha256": "eeb2350c5529fa40b00a9c82ab37a3f0aa913a174c25a24da4fec8fb3bb201ae",
+    "checks_sha256": "19a1d2f07e6c1f1437633efb19fc4158d14ab72e1c5b72e792cd1511877e7649"
+  },
+  {
+    "version": "v3",
+    "property": "noDoublePayment",
+    "status": "PASS",
+    "exit_code": 0,
+    "distinct_states": 11,
+    "log": "logs/v3-noDoublePayment.log",
+    "spec_sha256": "eeb2350c5529fa40b00a9c82ab37a3f0aa913a174c25a24da4fec8fb3bb201ae",
+    "checks_sha256": "19a1d2f07e6c1f1437633efb19fc4158d14ab72e1c5b72e792cd1511877e7649"
+  },
+  {
+    "version": "v3",
+    "property": "moneyConserved",
+    "status": "PASS",
+    "exit_code": 0,
+    "distinct_states": 11,
+    "log": "logs/v3-moneyConserved.log",
+    "spec_sha256": "eeb2350c5529fa40b00a9c82ab37a3f0aa913a174c25a24da4fec8fb3bb201ae",
+    "checks_sha256": "19a1d2f07e6c1f1437633efb19fc4158d14ab72e1c5b72e792cd1511877e7649"
+  },
+  {
+    "version": "v3",
+    "property": "noLockedFunds",
+    "status": "PASS",
+    "exit_code": 0,
+    "distinct_states": 11,
+    "log": "logs/v3-noLockedFunds.log",
+    "spec_sha256": "eeb2350c5529fa40b00a9c82ab37a3f0aa913a174c25a24da4fec8fb3bb201ae",
+    "checks_sha256": "19a1d2f07e6c1f1437633efb19fc4158d14ab72e1c5b72e792cd1511877e7649"
+  },
+  {
+    "version": "v3",
+    "property": "neverPaid",
+    "status": "REACHABLE",
+    "exit_code": 1,
+    "distinct_states": 9,
+    "log": "logs/v3-neverPaid.log",
+    "spec_sha256": "eeb2350c5529fa40b00a9c82ab37a3f0aa913a174c25a24da4fec8fb3bb201ae",
+    "checks_sha256": "19a1d2f07e6c1f1437633efb19fc4158d14ab72e1c5b72e792cd1511877e7649"
+  },
+  {
+    "version": "v3",
+    "property": "neverRefunded",
+    "status": "REACHABLE",
+    "exit_code": 1,
+    "distinct_states": 7,
+    "log": "logs/v3-neverRefunded.log",
+    "spec_sha256": "eeb2350c5529fa40b00a9c82ab37a3f0aa913a174c25a24da4fec8fb3bb201ae",
+    "checks_sha256": "19a1d2f07e6c1f1437633efb19fc4158d14ab72e1c5b72e792cd1511877e7649"
+  }
+]

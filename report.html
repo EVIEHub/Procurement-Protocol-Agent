@@ -1,0 +1,79 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Procurement · Quint repair loop</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#eef2f6;color:#172b44;font:16px/1.5 Arial,Helvetica,sans-serif}
+main{max-width:1328px;margin:24px auto;padding:24px;background:white;border:1px solid #dce3ec;border-radius:16px}
+svg{width:100%;height:auto;display:block}section{padding:0 20px 16px}h2{font-size:22px;margin:10px 0 16px}
+table{width:100%;border-collapse:collapse;font-size:15px}th,td{padding:14px 16px;border-bottom:1px solid #e2e8f0;text-align:center}
+th:first-child{text-align:left}thead{background:#f5f7fa;color:#52657d}tbody th{font-weight:500}
+a{color:#3469aa;text-decoration:none}a:hover{text-decoration:underline}.pass,.fail{display:inline-block;padding:3px 12px;border-radius:5px;font-size:12px;font-weight:700}
+.pass{color:#25634d;background:#eaf6ef}.fail{color:#ad4434;background:#fff0ec}
+.notes{font-size:14px;color:#52657d;margin:18px 0 0}.links{border-top:1px solid #e2e8f0;padding-top:14px;font-size:14px}
+@media print{body{background:white}main{margin:0;padding:0;border:0}section{break-inside:avoid}}
+</style><main><svg xmlns="http://www.w3.org/2000/svg" width="1280" height="740" viewBox="0 0 1280 740" role="img" aria-labelledby="title desc">
+<title id="title">Three counterexample-guided repairs of a Quint procurement model</title>
+<desc id="desc">Controlled defects are repaired after real TLC counterexamples. All four fixed properties pass in v3.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#94a3b8" stroke-width="1.3"/></marker></defs>
+<rect width="1280" height="740" rx="18" fill="#ffffff"/>
+<text x="44" y="89" font-family="Arial,Helvetica,sans-serif" font-size="36" fill="#172b44" font-weight="700">MVP for repair loop</text>
+<rect x="44" y="182" width="84" height="120" rx="12" fill="#f7f9fc" stroke="#e2e8f0"/>
+<text x="61" y="213" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#64748b" font-weight="700">ROUND 1</text>
+<text x="65" y="257" font-family="Arial,Helvetica,sans-serif" font-size="29" fill="#172b44" font-weight="700">v0</text>
+<path d="M136 242H158" stroke="#94a3b8" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
+<rect x="170" y="182" width="512" height="120" rx="12" fill="#fff8f7" stroke="#f0d5d0"/>
+<text x="189" y="209" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#b34b37" font-weight="700">TLC COUNTEREXAMPLE</text>
+<text x="189" y="235" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#172b44" font-weight="700">Payment before confirmation</text>
+<text x="189" y="261" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#52657d" font-weight="400">deposit → ship → pay</text>
+<text x="189" y="285" font-family="Menlo,monospace" font-size="14" fill="#ad4434" font-weight="400">confirmed = false   payments = 1</text>
+<path d="M694 242H720" stroke="#94a3b8" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
+<rect x="732" y="182" width="338" height="120" rx="12" fill="#f0f6ff" stroke="#d6e3f6"/>
+<text x="752" y="209" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#3469aa" font-weight="700">LLM REPAIR</text>
+<text x="752" y="241" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#172b44" font-weight="700">Require confirmation</text>
+<text x="752" y="273" font-family="Menlo,monospace" font-size="16" fill="#3469aa" font-weight="400">shipped → confirmed</text>
+<path d="M1082 242H1108" stroke="#94a3b8" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
+<rect x="1120" y="182" width="116" height="120" rx="12" fill="#f0faf6" stroke="#cee8dc"/>
+<text x="1137" y="211" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#35775f" font-weight="700">RECHECK</text>
+<text x="1156" y="248" font-family="Arial,Helvetica,sans-serif" font-size="28" fill="#172b44" font-weight="700">v1</text>
+<text x="1137" y="278" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#35775f" font-weight="700">2/4 pass</text>
+<rect x="44" y="331" width="84" height="120" rx="12" fill="#f7f9fc" stroke="#e2e8f0"/>
+<text x="61" y="362" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#64748b" font-weight="700">ROUND 2</text>
+<text x="65" y="406" font-family="Arial,Helvetica,sans-serif" font-size="29" fill="#172b44" font-weight="700">v1</text>
+<path d="M136 391H158" stroke="#94a3b8" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
+<rect x="170" y="331" width="512" height="120" rx="12" fill="#fff8f7" stroke="#f0d5d0"/>
+<text x="189" y="358" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#b34b37" font-weight="700">TLC COUNTEREXAMPLE</text>
+<text x="189" y="384" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#172b44" font-weight="700">Payment creates extra money</text>
+<text x="189" y="410" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#52657d" font-weight="400">deposit → ship → confirm → pay</text>
+<text x="189" y="434" font-family="Menlo,monospace" font-size="14" fill="#ad4434" font-weight="400">buyer / escrow / seller = 0 / 1 / 1</text>
+<path d="M694 391H720" stroke="#94a3b8" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
+<rect x="732" y="331" width="338" height="120" rx="12" fill="#f0f6ff" stroke="#d6e3f6"/>
+<text x="752" y="358" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#3469aa" font-weight="700">LLM REPAIR</text>
+<text x="752" y="390" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#172b44" font-weight="700">Debit escrow atomically</text>
+<text x="752" y="422" font-family="Menlo,monospace" font-size="16" fill="#3469aa" font-weight="400">escrow → escrow − 1</text>
+<path d="M1082 391H1108" stroke="#94a3b8" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
+<rect x="1120" y="331" width="116" height="120" rx="12" fill="#f0faf6" stroke="#cee8dc"/>
+<text x="1137" y="360" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#35775f" font-weight="700">RECHECK</text>
+<text x="1156" y="397" font-family="Arial,Helvetica,sans-serif" font-size="28" fill="#172b44" font-weight="700">v2</text>
+<text x="1137" y="427" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#35775f" font-weight="700">3/4 pass</text>
+<rect x="44" y="480" width="84" height="120" rx="12" fill="#f7f9fc" stroke="#e2e8f0"/>
+<text x="61" y="511" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#64748b" font-weight="700">ROUND 3</text>
+<text x="65" y="555" font-family="Arial,Helvetica,sans-serif" font-size="29" fill="#172b44" font-weight="700">v2</text>
+<path d="M136 540H158" stroke="#94a3b8" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
+<rect x="170" y="480" width="512" height="120" rx="12" fill="#fff8f7" stroke="#f0d5d0"/>
+<text x="189" y="507" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#b34b37" font-weight="700">TLC COUNTEREXAMPLE</text>
+<text x="189" y="533" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#172b44" font-weight="700">Expired escrow never releases</text>
+<text x="189" y="559" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#52657d" font-weight="400">deposit → expire → stutter forever</text>
+<text x="189" y="583" font-family="Menlo,monospace" font-size="14" fill="#ad4434" font-weight="400">expired = true   escrow = 1 forever</text>
+<path d="M694 540H720" stroke="#94a3b8" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
+<rect x="732" y="480" width="338" height="120" rx="12" fill="#f0f6ff" stroke="#d6e3f6"/>
+<text x="752" y="507" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#3469aa" font-weight="700">LLM REPAIR</text>
+<text x="752" y="539" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#172b44" font-weight="700">Enable timeout refund</text>
+<text x="752" y="571" font-family="Menlo,monospace" font-size="16" fill="#3469aa" font-weight="400">remove false guard</text>
+<path d="M1082 540H1108" stroke="#94a3b8" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
+<rect x="1120" y="480" width="116" height="120" rx="12" fill="#f0faf6" stroke="#cee8dc"/>
+<text x="1137" y="509" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#35775f" font-weight="700">RECHECK</text>
+<text x="1156" y="546" font-family="Arial,Helvetica,sans-serif" font-size="28" fill="#172b44" font-weight="700">v3</text>
+<text x="1137" y="576" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#35775f" font-weight="700">4/4 pass</text>
+<rect x="44" y="647" width="1192" height="54" rx="12" fill="#eff8f4" stroke="#cee8dc"/>
+<text x="64" y="681" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#25634d" font-weight="700">FINAL  v3    4/4 properties pass  ·  11 reachable states  ·  payment and refund both reachable</text>
+</svg><section><h2>Three properties repairs.</h2><table><thead><tr><th>Property</th><th>v0 · seeded</th><th>v1</th><th>v2</th><th>v3 · final</th></tr></thead><tbody><tr><th scope="row">No payment without confirmation</th><td><a class="fail" href="logs/v0-noPaymentWithoutConfirmation.log">FAIL</a></td><td><a class="pass" href="logs/v1-noPaymentWithoutConfirmation.log">PASS</a></td><td><a class="pass" href="logs/v2-noPaymentWithoutConfirmation.log">PASS</a></td><td><a class="pass" href="logs/v3-noPaymentWithoutConfirmation.log">PASS</a></td></tr><tr><th scope="row">No double payment</th><td><a class="pass" href="logs/v0-noDoublePayment.log">PASS</a></td><td><a class="pass" href="logs/v1-noDoublePayment.log">PASS</a></td><td><a class="pass" href="logs/v2-noDoublePayment.log">PASS</a></td><td><a class="pass" href="logs/v3-noDoublePayment.log">PASS</a></td></tr><tr><th scope="row">Money conservation</th><td><a class="fail" href="logs/v0-moneyConserved.log">FAIL</a></td><td><a class="fail" href="logs/v1-moneyConserved.log">FAIL</a></td><td><a class="pass" href="logs/v2-moneyConserved.log">PASS</a></td><td><a class="pass" href="logs/v3-moneyConserved.log">PASS</a></td></tr><tr><th scope="row">Prevention of money lock-up</th><td><a class="fail" href="logs/v0-noLockedFunds.log">FAIL</a></td><td><a class="fail" href="logs/v1-noLockedFunds.log">FAIL</a></td><td><a class="fail" href="logs/v2-noLockedFunds.log">FAIL</a></td><td><a class="pass" href="logs/v3-noLockedFunds.log">PASS</a></td></tr></tbody></table>
