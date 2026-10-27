@@ -1,0 +1,97 @@
+$ node /Users/kejiangqian/Desktop/procurement-mvp/node_modules/@informalsystems/quint/dist/src/cli.js verify /Users/kejiangqian/Desktop/procurement-mvp/specs/v0.qnt --main procurement --backend tlc --apalache-version 0.62.1 --tlc-config /Users/kejiangqian/Desktop/procurement-mvp/tlc.json --verbosity 3 --invariant noPaymentWithoutConfirmation
+
+[TLC] Compiling to TLA+ (via Apalache)...
+# Usage statistics is OFF. We care about your privacy.
+# If you want to help our project, consider enabling statistics with config --enable-stats=true.
+
+Output directory: /private/var/folders/vm/g3zg4tf1035_zw5s94xrb1rc0000gn/T/procurement-check-knf0xikv/_apalache-out/server/2026-10-18T16-43-30_16480856844341829418
+# APALACHE version: 0.62.1 | build: a321771                       I@16:43:30.162
+Starting checker server on port 8822...                           I@16:43:30.164
+The Apalache server is running on port 8822. Press Ctrl-C to stop.
+PASS #0: SanyParser                                               I@16:43:32.245
+[TLC] Running TLC model checker...
+
+TLC2 Version 2026.10.18.084332
+Warning: Please run the Java VM, which executes TLC with a throughput optimized garbage collector, by passing the "-XX:+UseParallelGC" property.
+(Use the -nowarning option to disable this warning.)
+Running breadth-first search Model-Checking with fp 37 and seed 8090577958862942801 with 1 worker on 8 cores with 1024MB heap and 64MB offheap memory [pid: 56857] (Mac OS X 14.8.7 aarch64, Eclipse Adoptium 21.0.12.1 64bit, MSBDiskFPSet, DiskStateQueue).
+Parsing file /private/var/folders/vm/g3zg4tf1035_zw5s94xrb1rc0000gn/T/quint-tlc-xnRm9o/procurement.tla (file:/var/folders/vm/g3zg4tf1035_zw5s94xrb1rc0000gn/T/quint-tlc-xnRm9o/procurement.tla)
+Parsing file /private/var/folders/vm/g3zg4tf1035_zw5s94xrb1rc0000gn/T/quint-tlc-xnRm9o/tlc-9432937847682820279/Integers.tla (jar:file:/Users/kejiangqian/Desktop/procurement-mvp/.quint/apalache-dist-0.62.1/apalache/lib/apalache.jar!/tla2sany/StandardModules/Integers.tla)
+Parsing file /private/var/folders/vm/g3zg4tf1035_zw5s94xrb1rc0000gn/T/quint-tlc-xnRm9o/tlc-9432937847682820279/Sequences.tla (jar:file:/Users/kejiangqian/Desktop/procurement-mvp/.quint/apalache-dist-0.62.1/apalache/lib/apalache.jar!/tla2sany/StandardModules/Sequences.tla)
+Parsing file /private/var/folders/vm/g3zg4tf1035_zw5s94xrb1rc0000gn/T/quint-tlc-xnRm9o/tlc-9432937847682820279/FiniteSets.tla (jar:file:/Users/kejiangqian/Desktop/procurement-mvp/.quint/apalache-dist-0.62.1/apalache/lib/apalache.jar!/tla2sany/StandardModules/FiniteSets.tla)
+Parsing file /private/var/folders/vm/g3zg4tf1035_zw5s94xrb1rc0000gn/T/quint-tlc-xnRm9o/tlc-9432937847682820279/TLC.tla (jar:file:/Users/kejiangqian/Desktop/procurement-mvp/.quint/apalache-dist-0.62.1/apalache/lib/apalache.jar!/tla2sany/StandardModules/TLC.tla)
+Parsing file /private/var/folders/vm/g3zg4tf1035_zw5s94xrb1rc0000gn/T/quint-tlc-xnRm9o/tlc-9432937847682820279/Apalache.tla (jar:file:/Users/kejiangqian/Desktop/procurement-mvp/.quint/apalache-dist-0.62.1/apalache/lib/apalache.jar!/tla2sany/StandardModules/Apalache.tla)
+Parsing file /private/var/folders/vm/g3zg4tf1035_zw5s94xrb1rc0000gn/T/quint-tlc-xnRm9o/tlc-9432937847682820279/Variants.tla (jar:file:/Users/kejiangqian/Desktop/procurement-mvp/.quint/apalache-dist-0.62.1/apalache/lib/apalache.jar!/tla2sany/StandardModules/Variants.tla)
+Parsing file /private/var/folders/vm/g3zg4tf1035_zw5s94xrb1rc0000gn/T/quint-tlc-xnRm9o/tlc-9432937847682820279/_TLCTrace.tla (jar:file:/Users/kejiangqian/Desktop/procurement-mvp/.quint/apalache-dist-0.62.1/apalache/lib/apalache.jar!/tla2sany/StandardModules/_TLCTrace.tla)
+Parsing file /private/var/folders/vm/g3zg4tf1035_zw5s94xrb1rc0000gn/T/quint-tlc-xnRm9o/tlc-9432937847682820279/Naturals.tla (jar:file:/Users/kejiangqian/Desktop/procurement-mvp/.quint/apalache-dist-0.62.1/apalache/lib/apalache.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file /private/var/folders/vm/g3zg4tf1035_zw5s94xrb1rc0000gn/T/quint-tlc-xnRm9o/tlc-9432937847682820279/TLCExt.tla (jar:file:/Users/kejiangqian/Desktop/procurement-mvp/.quint/apalache-dist-0.62.1/apalache/lib/apalache.jar!/tla2sany/StandardModules/TLCExt.tla)
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module Apalache
+Semantic processing of module Variants
+Semantic processing of module TLCExt
+Semantic processing of module _TLCTrace
+Semantic processing of module procurement
+Linting of module Apalache
+Linting of module Variants
+Linting of module TLCExt
+Linting of module _TLCTrace
+Linting of module procurement
+Starting... (2026-10-18 16:43:32)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-10-18 16:43:32.
+Error: Invariant q_inv is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+s = [ funded |-> FALSE,
+  shipped |-> FALSE,
+  confirmed |-> FALSE,
+  expired |-> FALSE,
+  buyer |-> 1,
+  escrow |-> 0,
+  seller |-> 0,
+  payments |-> 0 ]
+
+State 2: <deposit line 96, col 3 to line 101, col 7 of module procurement>
+s = [ funded |-> TRUE,
+  shipped |-> FALSE,
+  confirmed |-> FALSE,
+  expired |-> FALSE,
+  buyer |-> 0,
+  escrow |-> 1,
+  seller |-> 0,
+  payments |-> 0 ]
+
+State 3: <ship line 107, col 3 to line 110, col 45 of module procurement>
+s = [ funded |-> TRUE,
+  shipped |-> TRUE,
+  confirmed |-> FALSE,
+  expired |-> FALSE,
+  buyer |-> 0,
+  escrow |-> 1,
+  seller |-> 0,
+  payments |-> 0 ]
+
+State 4: <pay line 21, col 3 to line 31, col 7 of module procurement>
+s = [ funded |-> TRUE,
+  shipped |-> TRUE,
+  confirmed |-> FALSE,
+  expired |-> FALSE,
+  buyer |-> 0,
+  escrow |-> 1,
+  seller |-> 1,
+  payments |-> 1 ]
+
+9 states generated, 7 distinct states found, 3 states left on queue.
+The depth of the complete state graph search is 4.
+Finished in 00s at (2026-10-18 16:43:32)
+Trace exploration spec path: /var/folders/vm/g3zg4tf1035_zw5s94xrb1rc0000gn/T/quint-tlc-xnRm9o/procurement_TTrace_1792313012.tla
+
+[violation] Found an issue (347ms).
+Oct 18, 2026 4:43:31 PM com.google.protobuf.GeneratedMessage warnPre22Gencode
+WARNING: Vulnerable protobuf generated type in use: io.grpc.reflection.v1alpha.ServerReflectionRequest
+As of 2022/09/29 (release 21.7) makeExtensionsImmutable should not be called from protobuf gencode. If you are seeing this message, your gencode is vulnerable to a denial of service attack. You should regenerate your code using protobuf 25.6 or later. Use the latest version that meets your needs. However, if you understand the risks and wish to continue with vulnerable gencode, you can set the system property `-Dcom.google.protobuf.use_unsafe_pre22_gencode` on the command line to silence this warning. You also can set `-Dcom.google.protobuf.error_on_unsafe_pre22_gencode` to throw an error instead. See security vulnerability: https://github.com/protocolbuffers/protobuf/security/advisories/GHSA-h4h5-3hr4-j3g2
+error: found a counterexample

@@ -1,0 +1,412 @@
+[
+  {
+    "version": "v0",
+    "property": "noPaymentWithoutConfirmation",
+    "states": [
+      {
+        "index": 1,
+        "action": "init",
+        "values": {
+          "funded": false,
+          "shipped": false,
+          "confirmed": false,
+          "expired": false,
+          "buyer": 1,
+          "escrow": 0,
+          "seller": 0,
+          "payments": 0
+        }
+      },
+      {
+        "index": 2,
+        "action": "deposit",
+        "values": {
+          "funded": true,
+          "shipped": false,
+          "confirmed": false,
+          "expired": false,
+          "buyer": 0,
+          "escrow": 1,
+          "seller": 0,
+          "payments": 0
+        }
+      },
+      {
+        "index": 3,
+        "action": "ship",
+        "values": {
+          "funded": true,
+          "shipped": true,
+          "confirmed": false,
+          "expired": false,
+          "buyer": 0,
+          "escrow": 1,
+          "seller": 0,
+          "payments": 0
+        }
+      },
+      {
+        "index": 4,
+        "action": "pay",
+        "values": {
+          "funded": true,
+          "shipped": true,
+          "confirmed": false,
+          "expired": false,
+          "buyer": 0,
+          "escrow": 1,
+          "seller": 1,
+          "payments": 1
+        }
+      }
+    ],
+    "loop": null,
+    "source_log": "logs/v0-noPaymentWithoutConfirmation.log"
+  },
+  {
+    "version": "v0",
+    "property": "moneyConserved",
+    "states": [
+      {
+        "index": 1,
+        "action": "init",
+        "values": {
+          "funded": false,
+          "shipped": false,
+          "confirmed": false,
+          "expired": false,
+          "buyer": 1,
+          "escrow": 0,
+          "seller": 0,
+          "payments": 0
+        }
+      },
+      {
+        "index": 2,
+        "action": "deposit",
+        "values": {
+          "funded": true,
+          "shipped": false,
+          "confirmed": false,
+          "expired": false,
+          "buyer": 0,
+          "escrow": 1,
+          "seller": 0,
+          "payments": 0
+        }
+      },
+      {
+        "index": 3,
+        "action": "ship",
+        "values": {
+          "funded": true,
+          "shipped": true,
+          "confirmed": false,
+          "expired": false,
+          "buyer": 0,
+          "escrow": 1,
+          "seller": 0,
+          "payments": 0
+        }
+      },
+      {
+        "index": 4,
+        "action": "pay",
+        "values": {
+          "funded": true,
+          "shipped": true,
+          "confirmed": false,
+          "expired": false,
+          "buyer": 0,
+          "escrow": 1,
+          "seller": 1,
+          "payments": 1
+        }
+      }
+    ],
+    "loop": null,
+    "source_log": "logs/v0-moneyConserved.log"
+  },
+  {
+    "version": "v0",
+    "property": "noLockedFunds",
+    "states": [
+      {
+        "index": 1,
+        "action": "init",
+        "values": {
+          "funded": false,
+          "shipped": false,
+          "confirmed": false,
+          "expired": false,
+          "buyer": 1,
+          "escrow": 0,
+          "seller": 0,
+          "payments": 0
+        }
+      },
+      {
+        "index": 2,
+        "action": "deposit",
+        "values": {
+          "funded": true,
+          "shipped": false,
+          "confirmed": false,
+          "expired": false,
+          "buyer": 0,
+          "escrow": 1,
+          "seller": 0,
+          "payments": 0
+        }
+      },
+      {
+        "index": 3,
+        "action": "ship",
+        "values": {
+          "funded": true,
+          "shipped": true,
+          "confirmed": false,
+          "expired": false,
+          "buyer": 0,
+          "escrow": 1,
+          "seller": 0,
+          "payments": 0
+        }
+      },
+      {
+        "index": 4,
+        "action": "pay",
+        "values": {
+          "funded": true,
+          "shipped": true,
+          "confirmed": false,
+          "expired": false,
+          "buyer": 0,
+          "escrow": 1,
+          "seller": 1,
+          "payments": 1
+        }
+      },
+      {
+        "index": 5,
+        "action": "confirm",
+        "values": {
+          "funded": true,
+          "shipped": true,
+          "confirmed": true,
+          "expired": false,
+          "buyer": 0,
+          "escrow": 1,
+          "seller": 1,
+          "payments": 1
+        }
+      },
+      {
+        "index": 6,
+        "action": "expire",
+        "values": {
+          "funded": true,
+          "shipped": true,
+          "confirmed": true,
+          "expired": true,
+          "buyer": 0,
+          "escrow": 1,
+          "seller": 1,
+          "payments": 1
+        }
+      }
+    ],
+    "loop": {
+      "type": "stuttering",
+      "from_state": 6,
+      "to_state": 6
+    },
+    "source_log": "logs/v0-noLockedFunds.log"
+  },
+  {
+    "version": "v1",
+    "property": "moneyConserved",
+    "states": [
+      {
+        "index": 1,
+        "action": "init",
+        "values": {
+          "funded": false,
+          "shipped": false,
+          "confirmed": false,
+          "expired": false,
+          "buyer": 1,
+          "escrow": 0,
+          "seller": 0,
+          "payments": 0
+        }
+      },
+      {
+        "index": 2,
+        "action": "deposit",
+        "values": {
+          "funded": true,
+          "shipped": false,
+          "confirmed": false,
+          "expired": false,
+          "buyer": 0,
+          "escrow": 1,
+          "seller": 0,
+          "payments": 0
+        }
+      },
+      {
+        "index": 3,
+        "action": "ship",
+        "values": {
+          "funded": true,
+          "shipped": true,
+          "confirmed": false,
+          "expired": false,
+          "buyer": 0,
+          "escrow": 1,
+          "seller": 0,
+          "payments": 0
+        }
+      },
+      {
+        "index": 4,
+        "action": "confirm",
+        "values": {
+          "funded": true,
+          "shipped": true,
+          "confirmed": true,
+          "expired": false,
+          "buyer": 0,
+          "escrow": 1,
+          "seller": 0,
+          "payments": 0
+        }
+      },
+      {
+        "index": 5,
+        "action": "pay",
+        "values": {
+          "funded": true,
+          "shipped": true,
+          "confirmed": true,
+          "expired": false,
+          "buyer": 0,
+          "escrow": 1,
+          "seller": 1,
+          "payments": 1
+        }
+      }
+    ],
+    "loop": null,
+    "source_log": "logs/v1-moneyConserved.log"
+  },
+  {
+    "version": "v1",
+    "property": "noLockedFunds",
+    "states": [
+      {
+        "index": 1,
+        "action": "init",
+        "values": {
+          "funded": false,
+          "shipped": false,
+          "confirmed": false,
+          "expired": false,
+          "buyer": 1,
+          "escrow": 0,
+          "seller": 0,
+          "payments": 0
+        }
+      },
+      {
+        "index": 2,
+        "action": "deposit",
+        "values": {
+          "funded": true,
+          "shipped": false,
+          "confirmed": false,
+          "expired": false,
+          "buyer": 0,
+          "escrow": 1,
+          "seller": 0,
+          "payments": 0
+        }
+      },
+      {
+        "index": 3,
+        "action": "expire",
+        "values": {
+          "funded": true,
+          "shipped": false,
+          "confirmed": false,
+          "expired": true,
+          "buyer": 0,
+          "escrow": 1,
+          "seller": 0,
+          "payments": 0
+        }
+      }
+    ],
+    "loop": {
+      "type": "stuttering",
+      "from_state": 3,
+      "to_state": 3
+    },
+    "source_log": "logs/v1-noLockedFunds.log"
+  },
+  {
+    "version": "v2",
+    "property": "noLockedFunds",
+    "states": [
+      {
+        "index": 1,
+        "action": "init",
+        "values": {
+          "funded": false,
+          "shipped": false,
+          "confirmed": false,
+          "expired": false,
+          "buyer": 1,
+          "escrow": 0,
+          "seller": 0,
+          "payments": 0
+        }
+      },
+      {
+        "index": 2,
+        "action": "deposit",
+        "values": {
+          "funded": true,
+          "shipped": false,
+          "confirmed": false,
+          "expired": false,
+          "buyer": 0,
+          "escrow": 1,
+          "seller": 0,
+          "payments": 0
+        }
+      },
+      {
+        "index": 3,
+        "action": "expire",
+        "values": {
+          "funded": true,
+          "shipped": false,
+          "confirmed": false,
+          "expired": true,
+          "buyer": 0,
+          "escrow": 1,
+          "seller": 0,
+          "payments": 0
+        }
+      }
+    ],
+    "loop": {
+      "type": "stuttering",
+      "from_state": 3,
+      "to_state": 3
+    },
+    "source_log": "logs/v2-noLockedFunds.log"
+  }
+]
