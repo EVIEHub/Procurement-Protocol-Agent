@@ -1,4 +1,4 @@
-# Quint procurement MVP
+# Quint procurement
 
 [Diagram and check results](report.html) · [Repair record](REPAIRS.md) · [Final specification](specs/v3.qnt)
 
