@@ -1,0 +1,11 @@
+{
+  "name": "@sweet-monads/interfaces",
+  "version": "3.3.0",
+  "description": "Monad interfaces",
+  "exports": {
+    "types": "./index.d.ts"
+  },
+  "scripts": {},
+  "author": "",
+  "license": "MIT"
+}
