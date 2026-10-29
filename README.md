@@ -1,4 +1,4 @@
-# Agentic Generate-Check-Repair Loop for Generation of Procurement Protocol in Quint/TLC
+# Procurement Protocol Agent: Pilot Code and Quint Specifications
 
 [Diagram and check results](report.html) · [Repair record](REPAIRS.md) · [Final specification](specs/v3.qnt)
 
