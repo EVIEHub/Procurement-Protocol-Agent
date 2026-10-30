@@ -4,7 +4,7 @@
 
 Creators: [Kejiang Brian Qian](https://qian-kj.github.io/), [Fengxiang He](https://fengxianghe.github.io/)
 
-This prototype is intended for demonstration and quick validation: GPT in Codex generated and repaired the specifications over three fixed repair rounds, while Quint/TLC checked the properties and produced counterexamples. As more rules are added, an open-source model could generate and repair specifications in an automated loop, with Quint/TLC continuing to verify each round.
+This prototype is intended for demonstration:  given human intent in natural language, an agentic generate-check-repair loop based GPT Codex generate and repair specifications over three fixed repair rounds, while Quint/TLC checks the properties and produces counterexamples. As more rules are added, an open-source model could generate and repair specifications in an automated loop, with Quint/TLC continuing to verify each round.
 
 ## Model and assumptions
 
