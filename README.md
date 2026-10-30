@@ -10,7 +10,7 @@ This prototype is intended for demonstration:  given human intent in natural lan
 
 We consider one buyer, one seller, one order, one unit of money in this demonstration. We then consider five rules: (1) depositing into escrow does not count as paying the seller. (2) buyer should confirm the delivery before expiry. (3) Once confirmed, payment should be made even after expiry. (4) If the order is not confirmed by expiry, it is refunded. (5) Expiry, payment, and refund satisfy weak fairness; cooperation of buyer and seller is not assumed.
 
-Four properties are checked: no payment without confirmation, no double payment,fund conservation and prevention of fund lock-up.
+Four properties are checked: (1) no payment without confirmation, (2) no double payment, (3) fund conservation and (4) prevention of fund lock-up.
 
 
 ## Running
